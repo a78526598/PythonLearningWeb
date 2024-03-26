@@ -1,0 +1,13 @@
+#Hamburger{
+  border-color: transparent;
+}
+#Navi{
+  background-color: rgb(59, 178, 225);
+}
+.introdiv{
+  border-right: 1px solid lightgray;
+}
+#GetStarted{
+  border-radius: 4px;
+}
+#GetStarted:active,#GetStarted:focus{outline: none; box-shadow: none;}
