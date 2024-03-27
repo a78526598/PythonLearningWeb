@@ -9,5 +9,7 @@
 }
 #GetStarted{
   border-radius: 4px;
+  background-color: rgb(155, 216, 240);
+  color: rgb(20, 76, 98);
 }
 #GetStarted:active,#GetStarted:focus{outline: none; box-shadow: none;}
