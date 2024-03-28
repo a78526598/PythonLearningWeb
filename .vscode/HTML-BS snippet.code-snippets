@@ -1,0 +1,56 @@
+{
+	// Place your pytutorialproject workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Sidebar": {
+		"prefix": "Sidebar",
+		"body": [
+		  "<div class=\"col-2 mt-5\">",
+		  "<a href=\"../../index.html\" id=\"Home\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-house-fill\" viewBox=\"0 0 16 16\">",
+		  "    <path d=\"M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z\"/>",
+		  "    <path d=\"m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z\"/>",
+		  "    </svg></a>",
+		  "    <button",
+		  "        class=\"btn collapseLinks d-inline-flex align-items-center\"",
+		  "        type=\"button\"",
+		  "        id=\"dropdown\"",
+		  "        data-bs-toggle=\"collapse\"",
+		  "        data-bs-target=\"#contentId\"",
+		  "        aria-expanded=\"false\"",
+		  "        aria-controls=\"contentId\"",
+		  "    >",
+		  "    環境設定",
+		  "    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-caret-right-fill\" viewBox=\"0 0 16 16\">",
+		  "        <path d=\"m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z\"/>",
+		  "        </svg>",
+		  "    </button>",
+		  "    <div class=\"collapse\" id=\"contentId\">",
+		  "        <ul class=\"nav flex-column mb-0\">",
+		  "            <div class=\"nav-item\">",
+		  "                <a class=\"nav-link\" href=\"CodeEditor.html\">",
+		  "                </a>",
+		  "                <a class=\"nav-link\" href=\"VirtualEnv.html\">",
+		  "                </a>",
+		  "                <a class=\"nav-link\" href=\"#\">",
+		  "                </a>",
+		  "            </div>",
+		  "        </ul>",
+		  "    </div>",
+		  "</div>"
+		],
+		"description": ""
+	  }
+}
