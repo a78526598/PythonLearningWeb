@@ -109,11 +109,11 @@
                         <code>Windows鍵（Windows logo）＞直接打上cmd＞按下Enter</code>
                         就可以進入cmd了。
                         <div class="my-3 text-center">
-                            <img src="../imgs/cmdsearch.jpg" alt="cmd">
+                            <img src="../imgs/VirtualEnv/cmdsearch.jpg" alt="cmd">
                             <p>命令提示字元搜尋</p>
                         </div>
                         <div class="my-3 text-center">
-                            <img src="../imgs/cmd.jpg" alt="cmd">
+                            <img src="../imgs/VirtualEnv/createVirtualEnv.jpg" alt="cmd">
                             <p>命令提示字元</p>
                         </div>
                         最後只要輸入一行指令就可以了
@@ -134,14 +134,21 @@
                         <div class="codeblock mt-2"><code>D:\PythonFun\Scripts\activate</code></div>
                         相對路徑比較麻煩，會需要你停留在D槽裡面。<br>
                         <span class="fst-italic">直接輸入：</span>
-                        <div class="codeblock mt-2"><code>PythonFun\Scripts\activate</code></div>
-                        <div class="mt-2 text-center"><img src="../imgs/OpenVirtualEnv.jpg" alt="OpenEnv"><p>這樣就成功開啟了喔！</p></div>
+                        <div class="codeblock mt-2"><code>PythonFun<span class="fw-bolder">\</span>Scripts\activate</code></div>
+                        請注意是\（Enter上面的斜線）而非是/（shift旁邊的斜線！）
+                        <div class="mt-2 text-center"><img src="../imgs/VirtualEnv/OpenVirtualEnv.jpg" alt="OpenEnv"><p>這樣就成功開啟了喔！</p></div>
                     </div>
                     <div>
                         <h2 class="SmallTitle">PIP</h2>
                         在進行更進一步的解釋前，我們先來談談pip。pip是一個管理各個套件的內建工具。提供了Python能夠查詢、刪除以及安裝各大程式碼庫的管理工具。<br>
                         通常在書本上看到的套件安裝法為：
                         <div class="codeblock mt-2"><code>pip install <span class="insert">套件名稱</span></code></div>
+                        <div class="mt-2 text-center"><img src="../imgs/VirtualEnv/pipinstallGlobal.jpg" alt="GlobalPIP"><p>在全域環境中安裝套件</p></div>
+                        以上的方法是在全域的環境直接安裝，那如果我們要在虛擬環境中安裝的話要怎麼辦？
+                        很簡單，先用前一Part的方式打開虛擬環境後，輸入
+                        <div class="codeblock mt-2"><code>pip install <span class="insert">套件名稱</span></code></div>
+                        <div class="mt-2 text-center"><img src="../imgs/VirtualEnv/pipinstallVirtualEnv.jpg" alt="VirtualPIP"><p>在虛擬環境中安裝套件</p></div>
+                        如果想要調查安裝了甚麼樣子的
                     </div>
                 </section>
             </div>
