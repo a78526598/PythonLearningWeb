@@ -3,54 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Editor</title>
+    <title>虛擬環境</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="../Templates.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-2 mt-5">
-            <a href="../../index.html" id="Home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
-                </svg></a>
+            <nav class="nav flex-column col-2 mt-5">
+                <a href="../../index.html" id="Home"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                    </svg>
+                </a>
                 <button
-                    class="btn collapseLinks d-inline-flex align-items-center"
+                    class="nav-link btn collapseLinks"
                     type="button"
-                    id="dropdown"
                     data-bs-toggle="collapse"
-                    data-bs-target="#contentId"
+                    data-bs-target="#Environment"
                     aria-expanded="false"
-                    aria-controls="contentId"
+                    aria-controls="Environment"
                 >
                 環境設定
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-                    </svg>
                 </button>
-                <div class="collapse" id="contentId">
-                    <ul class="nav flex-column mb-0">
+                <div class="collapse" id="Environment">
+                    <ul class="flex-column mb-0">
                         <div class="nav-item">
-                            <a class="nav-link" href="CodeEditor.html">
+                            <a class="nav-link" role="button" href="CodeEditor.html">
                                 程式碼編輯器
                             </a>
                             <a class="nav-link" href="VirtualEnv.html">
                                 虛擬環境
                             </a>
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="test.html">
+                                測試環境
                             </a>
                         </div>
                     </ul>
                 </div>
-            </div>
+                <button
+                class="btn collapseLinks"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#DataTypes"
+                aria-expanded="false"
+                aria-controls="DataTypes"
+                >
+                資料型態
+                </button>
+                <div class="collapse" id="DataTypes">
+                    <ul class="flex-column mb-0">
+                        <div class="nav-item">
+                            <a class="nav-link" href="../DataTypes/VariableandNumbers.html">
+                                變數與數字
+                            </a>
+                            <a class="nav-link" href="../DataTypes/Strings.html">
+                                字串與字串的產地
+                            </a>
+                            <a class="nav-link" href="../DataTypes/List.html">
+                                列表
+                            </a>
+                            <a class="nav-link" href="../DataTypes/set.html">
+                                集合
+                            </a>
+                            <a class="nav-link" href="../DataTypes/tuple.html">
+                                元組
+                            </a>
+                            <a class="nav-link" href="../DataTypes/Dict.html">
+                                字典與Json
+                            </a>
+                    </ul>
+                </div>
+                <a href="../IF.html" role="button" class="btn collapseLinks">判斷式</a>
+                <a href="../loop.html" role="button" class="btn collapseLinks">迴圈</a>
+                <a href="../function.html" role="button" class="btn collapseLinks">函式</a>
+                <a href="../class.html" role="button" class="btn collapseLinks">類別</a>
+            </nav>
             <div class="col-10 mt-5">
-                123
+                <h1 class="ArticleTitle">虛擬環境</h1>
+                <h6 class="ArticleTitle">整理好你的開發環境</h6>
+                <section class="content">
+                    <span class="fw-bolder">虛擬環境</span>，Python內建的一個技術（於3.9版中內建）。
+                    虛擬環境最主要是將每個專案需要的環境分開來，能夠將各個環境明確的分開，也不必占用全域環境（只裝在C槽的Python）的記憶體空間。
+                    另外，也有可能當初開發的程式會需要某個套件（<span class="fw-bolder">套件</span>，將別人寫的程式碼庫直接來套用）的1.0版，也可能現在開發的程式會需要2.0版，但因為1.0版與2.0版的套件不可能一起存在，
+                    所以虛擬環境便能夠解決這種尷尬的情況。
+                    <div class="card my-2">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Python 應用程式通常會用到不在標準函式庫的套件和模組。應用程式有時候會需要某個特定版本的函式庫，因為這個應用程式可能需要某個特殊的臭蟲修正，或是這個應用程式是根據該函式庫特定版本的介面所撰寫。
+                                    這意味著不太可能安裝一套 Python 就可以滿足所有應用程式的要求。如果應用程式 A 需要一個特定的模組的 1.0 版，但另外一個應用程式 B 需要 2.0 版，那麼這整個需求不管安裝 1.0 或是 2.0 都會衝突，以致於應用程式無法使用。</p>
+                                <footer class="blockquote-footer">
+                                    節錄自
+                                    <cite title="Source title"><a href="https://docs.python.org/zh-tw/3/tutorial/venv.html" class="Links" target="blank">虛擬環境簡介</a></cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    虛擬環境在一般的教學較少提到，不過虛擬環境能夠整合開發環境，才會在這裡提及。
+                </section>
+                <section class="content my-2">
+                    <div>
+                        <h2 class="SmallTitle">建立虛擬環境</h2>
+                        首先，建立虛擬環境需要開啟在Windows內的cmd（命令提示字元）。<br>
+                        如果是Windows 10，只要在鍵盤上按下
+                        <code>Windows鍵（Windows logo）＞直接打上cmd＞按下Enter</code>
+                        就可以進入cmd了。
+                        <div class="my-3 text-center">
+                            <img src="../imgs/cmdsearch.jpg" alt="cmd">
+                            <p>命令提示字元搜尋</p>
+                        </div>
+                        <div class="my-3 text-center">
+                            <img src="../imgs/cmd.jpg" alt="cmd">
+                            <p>命令提示字元</p>
+                        </div>
+                        最後只要輸入一行指令就可以了
+                        <div class="codeblock"><code>python -m venv （你想要的名子）</code></div>
+                        以上，建立虛擬環境就完成了。<br>
+                        舉例來說，我想建立一個叫做PythonFun的虛擬環境。
+                        只要在cmd打上<div class="codeblock"><code>python -m venv PythonFun</code></div>
+                    </div>
+                    <div>
+                        <h2 class="SmallTitle">打開虛擬環境</h2>
+                        建立好虛擬環境後，會發現有個跟你先前輸入的名子同名的資料夾在同一個位置底下（假設輸入的名子是PythonFun）。
+                        那建立好的虛擬環境要怎麼開啟呢？
+                        方法是把PythonFun裡面的Scripts\activate.bat檔打開來。<br>
+                        有兩種方法，一種是絕對路徑，另一個是相對路徑。<br>
+                        絕對路徑就是指<span class="fw-bolder">很完整的路徑</span>，從在C槽或D槽，一直到資料夾內的檔案路徑等，都很詳細的寫下來。<br>
+                        相對路徑就是<span class="fw-bolder">不必撰寫得很完整的路徑</span>，可以省略掉C槽或D槽，就可以直接開啟檔案。<br>
+                        <span class="fst-italic">絕對路徑開啟方法：</span>
+                        <div class="codeblock mt-2"><code>D:\PythonFun\Scripts\activate</code></div>
+                        相對路徑比較麻煩，會需要你停留在D槽裡面。<br>
+                        <span class="fst-italic">直接輸入：</span>
+                        <div class="codeblock mt-2"><code>PythonFun\Scripts\activate</code></div>
+                        <div class="mt-2 text-center"><img src="../imgs/OpenVirtualEnv.jpg" alt="OpenEnv"><p>這樣就成功開啟了喔！</p></div>
+                    </div>
+                    <div>
+                        <h2 class="SmallTitle">PIP</h2>
+                        在進行更進一步的解釋前，我們先來談談pip。pip是一個管理各個套件的內建工具。提供了Python能夠查詢、刪除以及安裝各大程式碼庫的管理工具。<br>
+                        通常在書本上看到的套件安裝法為：
+                        <div class="codeblock mt-2"><code>pip install <span class="insert">套件名稱</span></code></div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script src="../AnimationScript.js"></script>
 </body>
 </html>

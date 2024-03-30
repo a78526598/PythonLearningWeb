@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+*{
+    font-family: "Noto Sans TC",sans-serif;
+}
 #Home{
     display: block;
     text-decoration: none;
@@ -47,11 +51,21 @@ pre{
 #footer{
     margin-top: 20vh;
 }
+.nav-link{
+    margin-top: 3px;
+    font-weight: 800;
+}
+.nav-link:hover{
+    background-color: rgb(244, 244, 244);
+}
 .Links{
     text-decoration: none;
     color:inherit;
 }
-#dropdown.active svg{
-    transition: 0.3s;
-    transform: rotate(90deg);
+.codeblock{
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+}
+.insert{
+    color: rgb(96, 96, 192);
 }
